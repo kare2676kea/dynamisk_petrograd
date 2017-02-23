@@ -58,16 +58,20 @@
 
             <div class="row">
                 <!--  Forret 1 -->
-                <div class="col-lg-4 forret forret1">
-                    <!--  Forret 1 end-->
-                    <!--  Forret 1 modalboks-->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#forret1">
-                        <img src="img/medium/ringbroed-druer-md.jpg" alt="billede">
-                        <h4>Russisk ringbrød med vindruer</h4>
-                        <h4>39kr</h4>
+                <template id="produkt_template">
+                    <div class="col-lg-4 forret forret1">
+                        <!--  Forret 1 end-->
+                        <!--  Forret 1 modalboks-->
+                        <div class="thumbnail_modalknap" data-toggle="modal" data-target="#forret1">
+                            <img src="img/medium/ringbroed-druer-md.jpg" alt="billede" class="data_billede">
+                            <h4 class="data_navn">DATA_NAVN</h4>
+                            <h4 class="udsolgt">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
+                            <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+                            <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
+                        </div>
+                        <!--  Forret 1 modalboks end-->
                     </div>
-                    <!--  Forret 1 modalboks end-->
-                </div>
+                </template>
 
                 <!--  Forret 2 -->
                 <div class="col-lg-4 forret forret2">
