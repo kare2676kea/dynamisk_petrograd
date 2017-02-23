@@ -21,9 +21,16 @@ function visProdukt(produkt) {
     var rabatpris = Math.ceil(produkt.pris - (produkt.pris * produkt.rabatsats / 100));
     klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
 
-    klon.querySelector(".data_billede").src="/img/small/"+produkt.billede+"-sm.jpg";
+    klon.querySelector(".data_billede").src = "/img/small/" + produkt.billede + "-sm.jpg";
 
-        document.querySelector(".produktliste").appendChild(klon);
+    if(produkt.udsolgt == false){
+        var udsolgttekst = klon.querySelector(".udsolgttekst");
+        udsolgttekst.parentNode.removeChild( udsolgttekst );
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
+
+    document.querySelector(".produktliste").appendChild(klon);
 }
 //
 ///// MODALBOKSE
