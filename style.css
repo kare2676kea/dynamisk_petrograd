@@ -1,30 +1,50 @@
 .row img {
-    height: 250px;
-    width: 350px;
+    width: 100%;
+    height: 67, 11%;
+    max-width: 380px;
 }
 
 .thumbnail_modalknap {
     border-style: hidden;
+    background-color: darkgray;
+    color: white;
+    margin-top: 5px;
+    ;
 }
 
 section {
     padding-top: 50px;
 }
 
-.forretter_container {
-    width: 100vw;
+.modalimg {
+    width: 100%;
 }
 
-.modalimg {
-    max-width: 100%;
+.splash img {
+    width: 100vw;
+    margin-top: 0px;
+}
+
+.heading {
+    position: relative;
+    margin: 30px auto;
+}
+
+.navbar {
+    background-color: #e5e5e5;
+}
+
+.forretter_container {
+    width: 100vw;
 }
 
 .fnutter3,
 .fnutter3 a {
     color: #101010;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 .fnutter3 a {
@@ -32,7 +52,7 @@ section {
 }
 
 .rabatpris {
-    color: green;
+    color: forestgreen;
 }
 
 .udsolgttekst {
@@ -45,4 +65,17 @@ section {
 
 .rabat {
     text-decoration: line-through;
+}
+
+.forret1 {
+    height: 420px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #e5e5e5;
 }

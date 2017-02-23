@@ -37,36 +37,45 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("rabat");
     }
 
+    // tilføj produkt-id til modalknap
+    klon.querySelector(".modalknap").dataset.produkt = produkt.id;
+
+    // registrer klik på modalknap
+    klon.querySelector(".modalknap").addEventListener("click", modalKnapKlik)
+
     document.querySelector(".produktliste").appendChild(klon);
 }
-//
-///// MODALBOKSE
-//
-//klon.querySelector(".modalknap").dataset.produkt = produkt.id;
-//
-//klon.querySelector(".modalknap").addEventListener("click", modal KnapKlik);
-//
-//function modalKnapKlik(event) {
-//    console.log("knapklik", event);
-//
-//    var produktId = event.target.dataset.produkt;
-//    console.log("klik på produkt;", produktId);
-//
-//    $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?", {
-//            id: produktId
-//        }
-//        visModalProdukt);
-//}
-//
-//function visModalProdukt(produkt) {
-//    console.log("vis modal for", produkt);
-//    var klon = document.querySelector("#modal_template").content.cloneNode(true);
-//
-//    document.querySelector(".modal-content").appendchild(klon);
-//}
-//
-//klon.querySelector("data_navn").innerHTML = produkt.navn;
-//
-//document.querySelector(".modal-content").appendChild(klon);
-//
-///// MODALBOKSE END
+
+
+/// MODALBOKSE
+
+function modalKnapKlik(event) {
+    console.log("knapklik", event);
+
+    // find det produkt id, hvis knap der blev trykket på
+    var produktId = event.target.dataset.produkt;
+    console.log("Klik på produkt: ", produktId);
+
+    $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?", {
+        id: produktId
+    }, visModalProdukt);
+}
+
+function visModalProdukt(produkt) {
+    console.log("vis modal for ", produkt);
+
+    // find modal_template - klon den
+    var klon =
+        document.querySelector("#modal_template").content.cloneNode(true);
+
+    // put data i klonen
+    klon.querySelector(".data_navn").innerHTML = produkt.navn;
+
+    // sletter det der stod i modal-content
+    document.querySelector(".modal-content").innerHTML = "";
+
+    // append klonen til modal-content
+    document.querySelector(".modal-content").appendChild(klon);
+}
+
+/// MODALBOKSE END

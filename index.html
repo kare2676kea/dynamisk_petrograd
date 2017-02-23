@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persongalleri</title>
+    <title>Restaurant Petrograd</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Restaurant Petrograd</a>
+                <a class="navbar-brand" href="#">RESTAURANT PETROGRAD</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,27 +46,31 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <section class="splash">
+        <img src="img/large/splash.jpg" alt="billede" class="modalimg data_billede"></section>
 
     <!-- /modalboks_forret1 -->
     <div class="modal fade" id="forret1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-<!--     /// det er her vores modal_template skal være-->
+                <!--     /// det er her vores modal_template skal være-->
                 <template id="modal_template">
                     <div class=" modal-header">
-                        <h3 class="modal-title data_navn" id="exampleModalLabel">Russisk ringbrød med vindruer</h3>
+                        <h3 class="modal-title data_navn" id="exampleModalLabel">DATA_NAVN</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="img/large/ringbroed-druer.jpg" alt="billede" class="modalimg">
-                        <p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
-                        <p>Vegetar venlig</p>
+                        <img src="img/large/ringbroed-druer.jpg" alt="billede" class="modalimg data_billede">
+                        <p class="om_tekst">Beskrivende tekst</p>
+                        <p class="vegetar">Vegetarisk</p>
 
                     </div>
                     <div class="modal-footer">
-                        <h3>39kr</h3>
+                        <h3 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h3>
+                        <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+                        <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
 
                     </div>
@@ -79,221 +83,27 @@
     <section id="forret">
         <div class="container">
             <!--  Page heading  -->
-            <h2>Forretter</h2>
+            <h2 class="heading">PRODUKTER</h2>
             <!--  Page heading end -->
 
 
             <div class="row produktliste">
                 <!--  Forret 1 -->
                 <template id="produkt_template">
-                    <div class="col-lg-4 forret forret1">
+                    <div class="col-sm-6 col-md-4 col-lg-4 forret forret1">
                         <!--  Forret 1 end-->
                         <!--  Forret 1 modalboks-->
-                        <div class="thumbnail_modalknap modalknap" data-toggle="modal" data-target="#forret1">
-                            <a href="#"><img src="img/small/rodbede-cabanossi-sm.jpg" alt="" class="img-responsive data_billede"></a>
-                            <h4 class="data_navn">DATA_NAVN</h4>
-                            <h4 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
-                            <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
-                            <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
-                        </div>
+                        <a href="#"><img src="img/small/rodbede-cabanossi-sm.jpg" alt="" class="img-responsive data_billede"></a>
+                        <h4 class="data_navn">DATA_NAVN</h4>
+                        <h4 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
+                        <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+                        <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
+
+                        <button type="button" class="btn btn-secondary thumbnail_modalknap modalknap" data-dismiss="modal" data-toggle="modal" data-target="#forret1">LÆS MERE</button>
+
                         <!--  Forret 1 modalboks end-->
                     </div>
                 </template>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section id="hovedret">
-        <div class="container">
-            <!--  Page heading  -->
-            <h2>Hovedretter</h2>
-            <!--  Page heading end  -->
-
-            <div class="row">
-                <!--  Hovedret 1 -->
-                <div class="col-lg-4 hovedret hovedret1">
-                    <!--  Hovedret 1 end -->
-                    <!--  Hovedret 1 modalboks end -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#hovedret1">
-                        <img src="img/medium/bulgarskbondesuppe-md.jpg" alt="billede">
-                        <h4>Bulgarsk bondesuppe</h4>
-                        <h4>99kr</h4>
-                    </div>
-                    <!--  Hovedret 1 modalboks end -->
-                </div>
-
-                <!--  Hovedret 2 -->
-                <div class="col-lg-4 hovedret hovedret2">
-                    <!--  Hovedret 2 end -->
-                    <!--  Hovedret 2 modalboks  -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#hovedret2">
-
-                        <img src="img/medium/mos-rogn-md.jpg" alt="billede">
-                        <h4>Kæmperogn med kartoffelmos</h4>
-                        <h4>89kr</h4>
-                    </div>
-                    <!--  Hovedret 2 modalboks end -->
-                </div>
-
-                <!--  Hovedret 3 -->
-                <div class="col-lg-4 hovedret hovedret3">
-                    <!--  Hovedret 3 end -->
-                    <!--  Hovedret 3 modalboks  -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#hovedret3">
-                        <img src="img/medium/boef-md.jpg" alt="billede">
-                        <h4>Diplomat-bøf med grønt</h4>
-                        <h4>179kr</h4>
-                    </div>
-                    <!--  Hovedret 3 modalboks end  -->
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section id="dessert">
-        <div class="container">
-            <!--  Page heading  -->
-            <h2>Desserter</h2>
-            <!--  Page heading end -->
-
-            <div class="row">
-                <!--  Dessert 1 -->
-                <div class="col-lg-4 dessert dessert1">
-                    <!--  Dessert 1 end -->
-                    <!--  Dessert 1 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#dessert1">
-                        <img src="img/medium/kaviarpandekager-md.jpg" alt="billede">
-                        <h4>Pandekager med kaviar</h4>
-                        <h4>79kr</h4>
-                    </div>
-                    <!--  Dessert 1 modalboks end -->
-                </div>
-
-                <!--  Dessert 2 -->
-                <div class="col-lg-4 dessert dessert2">
-                    <!--  Dessert 2 end -->
-                    <!--  Dessert 2 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#dessert2">
-
-                        <img src="img/medium/guzni-md.jpg" alt="billede">
-                        <h4>Guzni</h4>
-                        <h4>69kr</h4>
-                    </div>
-                    <!--  Dessert 2 modalboks end -->
-                </div>
-
-                <!--  Dessert 3 -->
-                <div class="col-lg-4 dessert dessert3">
-                    <!--  Dessert 3 end -->
-                    <!--  Dessert 3 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#dessert3">
-                        <img src="img/medium/kirgisiskroulade-md.jpg" alt="billede">
-                        <h4>Kirgisisk roulade</h4>
-                        <h4>89kr</h4>
-                    </div>
-                    <!--  Dessert 3 modalboks end -->
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section id="sides">
-        <div class="container">
-            <!--  Page heading  -->
-            <h2>Sideorders</h2>
-            <!--  Page heading end  -->
-            <div class="row">
-                <!--  sideorders1 -->
-                <div class="col-lg-4 sides sides1">
-                    <!--  sideorders1 end -->
-                    <!--  sideorders1 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#sides1">
-                        <img src="img/medium/ringbroed-md.jpg" alt="billede">
-                        <h4>Russisk ringbrød</h4>
-                        <h4>29kr</h4>
-                    </div>
-                    <!--  sideorders1 modalboks end -->
-                </div>
-
-                <!--  sideorders2 -->
-                <div class="col-lg-4 sides sides2">
-                    <!--  sideorders2 end -->
-                    <!--  sideorders2 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#sides2">
-
-                        <img src="img/medium/bondeboller-md.jpg" alt="billede">
-                        <h4>Murmanske bondeboller</h4>
-                        <h4>19kr</h4>
-                    </div>
-                    <!--  sideorders2 modalboks end -->
-                </div>
-
-                <!--  sideorders3 -->
-                <div class="col-lg-4 sides sides3">
-                    <!--  sideorders3 end -->
-                    <!--  sideorders3 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#sides3">
-                        <img src="img/medium/russisksalat-md.jpg" alt="billede">
-                        <h4>Russisk salat</h4>
-                        <h4>49kr</h4>
-                    </div>
-                    <!--  sideorders3 modalboks -->
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="drikke">
-        <div class="container">
-
-            <!--  Page heading  -->
-            <h2>Drikkevarer</h2>
-            <!--  Page heading end  -->
-
-            <div class="row">
-                <!--  drikke1 -->
-                <div class="col-lg-4 drikke drikke1">
-                    <!--  drikke1 end -->
-                    <!--  drikke1 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#drikke1">
-                        <img src="img/medium/bochkarev-md.jpg" alt="billede">
-                        <h4>Bochkarev fadøl</h4>
-                        <h4>55kr</h4>
-                    </div>
-                    <!--  drikke1 modalboks end -->
-                </div>
-
-                <!--  drikke2 -->
-                <div class="col-lg-4 drikke drikke2">
-                    <!--  drikke2 end -->
-                    <!--  drikke2 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#drikke2">
-
-                        <img src="img/medium/voda-md.jpg" alt="billede">
-                        <h4>Voda-vodka</h4>
-                        <h4>19kr</h4>
-                    </div>
-                    <!--  drikke2 modalboks end -->
-                </div>
-
-                <!--  drikke3 -->
-                <div class="col-lg-4 drikke drikke3">
-                    <!--  drikke3 end -->
-                    <!--  drikke3 modalboks -->
-                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#drikke3">
-                        <img src="img/medium/cola-md.jpg" alt="billede">
-                        <h4>Gloske (cola)</h4>
-                        <h4>39kr</h4>
-                    </div>
-                    <!--  drikke3 modalboks end -->
-                </div>
 
             </div>
         </div>
