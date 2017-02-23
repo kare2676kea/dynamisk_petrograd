@@ -47,6 +47,35 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!-- /modalboks_forret1 -->
+    <div class="modal fade" id="forret1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+<!--     /// det er her vores modal_template skal være-->
+                <template id="modal_template">
+                    <div class=" modal-header">
+                        <h3 class="modal-title data_navn" id="exampleModalLabel">Russisk ringbrød med vindruer</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/ringbroed-druer.jpg" alt="billede" class="modalimg">
+                        <p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>39kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <!-- /.forret1 -->
+
     <section id="forret">
         <div class="container">
             <!--  Page heading  -->
@@ -60,7 +89,7 @@
                     <div class="col-lg-4 forret forret1">
                         <!--  Forret 1 end-->
                         <!--  Forret 1 modalboks-->
-                        <div class="thumbnail_modalknap" data-toggle="modal" data-target="#forret1">
+                        <div class="thumbnail_modalknap modalknap" data-toggle="modal" data-target="#forret1">
                             <img src="img/medium/ringbroed-druer-md.jpg" alt="billede" class="data_billede">
                             <h4 class="data_navn">DATA_NAVN</h4>
                             <h4 class="udsolgt">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
