@@ -40,5 +40,9 @@ section {
 }
 
 .udsolgt {
-  text-decoration: line-through;
+    text-decoration: line-through;
+}
+
+.rabat {
+    text-decoration: line-through;
 }

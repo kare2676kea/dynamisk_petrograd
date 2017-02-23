@@ -23,11 +23,18 @@ function visProdukt(produkt) {
 
     klon.querySelector(".data_billede").src = "/img/small/" + produkt.billede + "-sm.jpg";
 
-    if(produkt.udsolgt == false){
+    if (produkt.udsolgt == false) {
         var udsolgttekst = klon.querySelector(".udsolgttekst");
-        udsolgttekst.parentNode.removeChild( udsolgttekst );
+        udsolgttekst.parentNode.removeChild(udsolgttekst);
     } else {
         klon.querySelector(".pris").classList.add("udsolgt");
+    }
+
+    if (produkt.udsolgt == true || produkt.rabatsats == 0) {
+        var rabatpris = klon.querySelector(".rabatpris");
+        rabatpris.parentNode.removeChild(rabatpris);
+    } else {
+        klon.querySelector(".pris").classList.add("rabat");
     }
 
     document.querySelector(".produktliste").appendChild(klon);
