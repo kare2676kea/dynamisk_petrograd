@@ -21,8 +21,9 @@ function visProdukt(produkt) {
     var rabatpris = Math.ceil(produkt.pris - (produkt.pris * produkt.rabatsats / 100));
     klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
 
-    document.querySelector(".produktliste").appendChild(klon);
+    klon.querySelector(".data_billede").src="/img/small/"+produkt.billede+"-sm.jpg";
 
+        document.querySelector(".produktliste").appendChild(klon);
 }
 //
 ///// MODALBOKSE
