@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persongalleri</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Restaurant Petrograd</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menukort <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#forret">Forretter</a></li>
+                            <li><a href="#hovedret">Hovedretter</a></li>
+                            <li><a href="#dessert">Desserter</a></li>
+                            <li><a href="#drikke">Drikkevarer</a></li>
+                            <li><a href="#sides">Sideorders</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+    <section id="forret">
+
+        <!--  Page heading  -->
+        <div class="container">
+            <h2>Forretter</h2>
+            <!--  Page heading end -->
+
+
+            <div class="row">
+                <!--  Forret 1 -->
+                <div class="col-lg-4 forret forret1">
+                    <!--  Forret 1 end-->
+                    <!--  Forret 1 modalboks-->
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#forret1">
+                        <img src="img/medium/ringbroed-druer-md.jpg" alt="billede">
+                        <h4>Russisk ringbrød med vindruer</h4>
+                        <h4>39kr</h4>
+                    </div>
+                    <!--  Forret 1 modalboks end-->
+                </div>
+
+                <!--  Forret 2 -->
+                <div class="col-lg-4 forret forret2">
+                    <!--  Forret 2 end-->
+                    <!--  Forret 2 modalboks-->
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#forret2">
+
+                        <img src="img/medium/rodbede-cabanossi-md.jpg" alt="billede">
+                        <h4>Cabanossi med rødbedecreme</h4>
+                        <h4>49kr</h4>
+                    </div>
+                    <!--  Forret 2 modalboks-->
+                </div>
+
+                <!--  Forret 3 -->
+                <div class="col-lg-4 forret forret3">
+                    <!--  Forret 3 end-->
+                    <!--  Forret 3 modalboks end-->
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#forret3">
+                        <img src="img/medium/caviarbruschetta-md.jpg" alt="billede">
+                        <h4>Caviar bruschetta</h4>
+                        <h4>49kr</h4>
+                    </div>
+                    <!--  Forret 3 modalboks end-->
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /forret1 -->
+        <div class="modal fade" id="forret1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Russisk ringbrød med vindruer</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/ringbroed-druer.jpg" alt="billede" class="modalimg">
+                        <p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>39kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret1 -->
+
+
+        <!-- /forret2 -->
+        <div class="modal fade" id="forret2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel1">Cabanossi med rødbedecreme</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/rodbede-cabanossi.jpg" alt="billede" class="modalimg">
+                        <p>Cabanossi med rødbedecreme og creme er egentlig en forret, men kammerat Vladimir elskede denne ret så højt, at han forbød restauranter i Krigien at sælge det som andet end en hovedret. Vi anbefaler det dog som forret, inden en god Bortsjs. Skylles helst ned med vodka.</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>49kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret2 -->
+
+
+        <!-- /forret3 -->
+        <div class="modal fade" id="forret3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel2">Caviar bruschetta</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/caviarbruschetta.jpg" alt="billede" class="modalimg">
+                        <p>Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>49kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret3 -->
+    </section>
+
+    <section id="hovedret">
+
+        <div class="container">
+            <h2>Hovedretter</h2>
+            <div class="row">
+                <div class="col-lg-4 hovedret hovedret1">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#hovedret1">
+                        <img src="img/medium/bulgarskbondesuppe-md.jpg" alt="billede">
+                        <h4>Bulgarsk bondesuppe</h4>
+                        <h4>99kr</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 hovedret hovedret2">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#hovedret2">
+
+                        <img src="img/medium/mos-rogn-md.jpg" alt="billede">
+                        <h4>Kæmperogn med kartoffelmos</h4>
+                        <h4>89kr</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 hovedret hovedret3">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#hovedret3">
+                        <img src="img/medium/boef-md.jpg" alt="billede">
+                        <h4>Diplomat-bøf med grønt</h4>
+                        <h4>179kr</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /forret1 -->
+        <div class="modal fade" id="hovedret1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel3">Bulgarsk bondesuppe</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/bulgarskbondesuppe.jpg" alt="billede" class="modalimg">
+                        <p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>99kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret1 -->
+
+
+        <!-- /forret2 -->
+        <div class="modal fade" id="hovedret2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel4">Kæmperogn med kartoffelmos</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/mos-rogn.jpg" alt="billede" class="modalimg">
+                        <p>Kæmpe klipfiskene i det nordlige Novogorod har længe været kendt for at levere de bedste rogn. Her sereveres de med eis-kartofler og en lækker sovs baseret på fiskefond.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>89kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret2 -->
+
+
+        <!-- /forret3 -->
+        <div class="modal fade" id="hovedret3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel5">Diplomat-bøf med grønt</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/boef.jpg" alt="billede" class="modalimg">
+                        <p>Diplomatiet har haft mange udfordringer i USSR. Derfor blev der sørget godt for dem, og som nogen af de få, fik diplomaterne mange bøffer under den kolde krig. Diplomat-bøffen med grillede grøntsager og koldpresset olie er af ypperste kvalitet - kødet kommer fra udsultede ungkalve i Viktoriagrad.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>179kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret3 -->
+    </section>
+
+    <section id="dessert">
+
+        <div class="container">
+            <h2>Desserter</h2>
+            <div class="row">
+                <div class="col-lg-4 dessert dessert1">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#dessert1">
+                        <img src="img/medium/kaviarpandekager-md.jpg" alt="billede">
+                        <h4>Pandekager med kaviar</h4>
+                        <h4>79kr</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 dessert dessert2">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#dessert2">
+
+                        <img src="img/medium/guzni-md.jpg" alt="billede">
+                        <h4>Guzni</h4>
+                        <h4>69kr</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 dessert dessert3">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#dessert3">
+                        <img src="img/medium/kirgisiskroulade-md.jpg" alt="billede">
+                        <h4>Kirgisisk roulade</h4>
+                        <h4>89kr</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /forret1 -->
+        <div class="modal fade" id="dessert1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel6">Pandekager med kaviar</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/kaviarpandekager.jpg" alt="billede" class="modalimg">
+                        <p>Brændte pandekager med Bordyriske ørne-kaviar. Ørne laver kaviar på størrelse med peberkorn. Og de smager af kaviar. Ikke peber. Lækkert.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>79kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret1 -->
+
+
+        <!-- /forret2 -->
+        <div class="modal fade" id="dessert2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel7">Guzni</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/guzni.jpg" alt="billede" class="modalimg">
+                        <p>Guzni - den verdenskendte rødbede/nøddeis fra Petrograd. Kammerat Boris Guzni var stor fan af den, og spiste den hver dag under Den kolde krig.</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>69kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret2 -->
+
+
+        <!-- /forret3 -->
+        <div class="modal fade" id="dessert3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel8">Kirgisisk roulade</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/kirgisiskroulade.jpg" alt="billede" class="modalimg">
+                        <p>I det nordlige Kirgisistan består en væsentlig del af kostpyramiden af forskellige kålvarianter og nødder. Mama Dushku fandt på denne ret, som en hyldest til det røde flag med hammer og segl.</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>89kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret3 -->
+    </section>
+
+
+
+    <section id="sides">
+
+        <div class="container">
+            <h2>Sideorders</h2>
+            <div class="row">
+                <div class="col-lg-4 sides sides1">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#sides1">
+                        <img src="img/medium/ringbroed-md.jpg" alt="billede">
+                        <h4>Russisk ringbrød</h4>
+                        <h4>29kr</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 sides sides2">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#sides2">
+
+                        <img src="img/medium/bondeboller-md.jpg" alt="billede">
+                        <h4>Murmanske bondeboller</h4>
+                        <h4>19kr</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 sides sides3">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#sides3">
+                        <img src="img/medium/russisksalat-md.jpg" alt="billede">
+                        <h4>Russisk salat</h4>
+                        <h4>49kr</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /forret1 -->
+        <div class="modal fade" id="sides1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel9">Russisk ringbrød</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/ringbroed.jpg" alt="billede" class="modalimg">
+                        <p>Russisk ringbrød bagt med det fineste gryzni-mel fra Gryzkigistan</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>29kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret1 -->
+
+
+        <!-- /forret2 -->
+        <div class="modal fade" id="sides2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel10">Murmanske bondeboller</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/bondeboller.jpg" alt="billede" class="modalimg">
+                        <p>Murmanske bondeboller bagt i stenovn</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>19kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret2 -->
+
+
+        <!-- /forret3 -->
+        <div class="modal fade" id="sides3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel11">Russisk salat</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/russisksalat.jpg" alt="billede" class="modalimg">
+                        <p>Russisk salat med ærter, bønner, gulerødder og mayonnaise fra Volgograd</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>49kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret3 -->
+    </section>
+
+
+
+
+
+    <section id="drikke">
+
+        <div class="container">
+            <h2>Drikkevarer</h2>
+            <div class="row">
+                <div class="col-lg-4 drikke drikke1">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#drikke1">
+                        <img src="img/medium/bochkarev-md.jpg" alt="billede">
+                        <h4>Bochkarev fadøl</h4>
+                        <h4>55kr</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 drikke drikke2">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#drikke2">
+
+                        <img src="img/medium/voda-md.jpg" alt="billede">
+                        <h4>Voda-vodka</h4>
+                        <h4>19kr</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 drikke drikke3">
+                    <div class="thumbnail_modalknap" data-toggle="modal" data-target="#drikke3">
+                        <img src="img/medium/cola-md.jpg" alt="billede">
+                        <h4>Gloske (cola)</h4>
+                        <h4>39kr</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /forret1 -->
+        <div class="modal fade" id="drikke1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel12">Bochkarev fadøl</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/bochkarev.jpg" alt="billede" class="modalimg">
+                        <p>En halv liter Bochkarev fadøl</p>
+                        <p>Alkoholprocent: 5,5%</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>55kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret1 -->
+
+
+        <!-- /forret2 -->
+        <div class="modal fade" id="drikke2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel13">Voda-vodka</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/voda.jpg" alt="billede" class="modalimg">
+                        <p>Voda-vodka - en vodka brygget på det pureste vand af smeltet sne fra Sibirien. Passer godt til alle hovedretter</p>
+                        <p>Alkoholprocent: 60%</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>19kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret2 -->
+
+
+        <!-- /forret3 -->
+        <div class="modal fade" id="drikke3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class=" modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel14">Gloske (cola)</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/large/cola.jpg" alt="billede" class="modalimg">
+                        <p>Gloske - russisk for Cola - fra bryggeriet Iznogoud</p>
+                        <p>Vegetar venlig</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>39kr</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.forret3 -->
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-4 col-lg-offset-4 fnutter fnutter3">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="mailto:"><i class="fa fa-envelope"></i></a>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

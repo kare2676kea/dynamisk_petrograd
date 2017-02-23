@@ -1,0 +1,32 @@
+.row img {
+    height: 250px;
+    width: 350px;
+}
+
+.thumbnail_modalknap {
+    border-style: hidden;
+}
+
+section {
+    padding-top: 50px;
+}
+
+.forretter_container {
+    width: 100vw;
+}
+
+.modalimg {
+    max-width: 100%;
+}
+
+.fnutter3,
+.fnutter3 a {
+    color: #101010;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 7rem;
+}
+
+.fnutter3 a {
+    padding: 0 30px;
+}
